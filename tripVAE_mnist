@@ -1,0 +1,52 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled11.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3YKCaZMHZVmPmbAjqs4sO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Debottam/MachinLearningEx/blob/master/tripVAE_mnist\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RMjQE5RT5XmL"
+      },
+      "source": [
+        "import tensorflow as tf\n",
+        "from tensorflow.keras.models import Model\n",
+        "from tensorflow.keras.layers import Input, Flatten, Dense, Dropout, Lambda\n",
+        "from tensorflow.keras.optimizers import RMSprop\n",
+        "from tensorflow.keras.datasets import fashion_mnist\n",
+        "from tensorflow.python.keras.utils.vis_utils import plot_model\n",
+        "from tensorflow.keras import backend as K\n",
+        "\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "from PIL import Image, ImageFont, ImageDraw\n",
+        "import random\n",
+        "from sklearn.utils import check_random_state\n",
+        "from sklearn.decomposition import PCA"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    }
+  ]
+}
